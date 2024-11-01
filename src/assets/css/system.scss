@@ -1,0 +1,93 @@
+
+@font-face{
+  font-family:'smile';
+  // src:url('./smile.otf') format('truetype');
+  src:url('./m-font.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'mont-light';
+  src:url('./Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'mont-Medium';
+  src:url('./Montserrat-Medium.ttf.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'mont-Medium-b';
+  src:url('./Montserrat-Medium-b.ttf') format('truetype');
+}
+
+body, html {
+  color: #F9F6EF;
+  // background-image: radial-gradient(circle at 50% 50%, #2f3040, #1f2020);
+  background-image: radial-gradient(circle at 50% 50%, #262626, #1C1C1C);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'mont-light';
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #94D546;
+}
+
+::selection {
+  // background: #3D4556;
+  // color: #CEF151;
+  background: #94D546;
+  color: #000000;
+  // text-shadow: 1px 1px 2px #000000;
+  text-shadow: 0px 0px 0.5px #000000,1px 1px 2px #1D1D1D;
+}
+
+::-moz-selection {
+  // background: #3D4556;
+  // color: #CEF151;
+  background: #94D546;
+  color: #000000;
+  // text-shadow: 1px 1px 2px #000000;
+  text-shadow: 0px 0px 0.5px #000000,1px 1px 2px #1D1D1D;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  scroll-behavior: smooth;
+}
+
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.char {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .page-main {
+    margin-top: 100px;
+  }
+}
+
+.m-btn {
+  width: 200px;
+}
+
